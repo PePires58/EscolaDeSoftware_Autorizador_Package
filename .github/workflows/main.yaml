@@ -9,7 +9,6 @@ jobs:
     with:
       working-directory: "src"
       execute-unit-tests: "true"
-      nome-pacote: "escoladesoftware-autorizador-sdk"
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       
