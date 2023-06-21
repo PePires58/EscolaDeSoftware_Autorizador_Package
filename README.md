@@ -10,4 +10,4 @@ Obrigado
 
 This repository contains a package of functions to authorize with escola de software
 
-Thanks
+Thanks 
