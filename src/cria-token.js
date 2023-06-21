@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-function criarToken(userObject = {}, privateKey = '',
+module.exports = function (userObject = {}, privateKey = '',
     config = {
         expiresIn: '2 days',
         issuer: '',
@@ -20,7 +20,7 @@ function criarToken(userObject = {}, privateKey = '',
     return token;
 }
 
-function validarToken(token = '', privateKey = '', config = {
+exports.validarToken = function (token = '', privateKey = '', config = {
     issuer: '',
     audience: ''
 }) {
@@ -46,6 +46,3 @@ function deletarPropriedadesToken(token) {
 
     return token;
 }
-
-
-module.exports = { criarToken, validarToken };
