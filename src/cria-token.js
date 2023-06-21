@@ -2,17 +2,17 @@ const jwt = require('jsonwebtoken');
 
 module.exports = function (userObject = {}, privateKey = '',
     config = {
-        expiresIn: '2 days',
+        expiresIn: '',
         issuer: '',
-        notBefore: '120ms',
+        notBefore: '',
         subject: '',
         audience: ''
     }) {
 
     const token = jwt.sign(userObject, privateKey, {
-        expiresIn: config.expiresIn,
+        expiresIn: config.expiresIn || '2 days',
         issuer: config.issuer,
-        notBefore: config.notBefore,
+        notBefore: config.notBefore || '120ms',
         subject: config.subject,
         audience: config.audience,
     });

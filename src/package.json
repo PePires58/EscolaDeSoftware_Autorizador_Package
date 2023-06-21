@@ -1,6 +1,6 @@
 {
   "name": "escoladesoftware-autorizador-package",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "contém um pacote sobre o autorizador da escola de software",
   "repository": "https://github.com/PePires58/EscolaDeSoftware_Autorizador_Package",
   "scripts": {

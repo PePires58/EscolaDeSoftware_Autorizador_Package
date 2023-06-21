@@ -1,24 +1,33 @@
 const assert = require('assert').strict;
 const tokenPackage = require('../index');
 
-describe('Validate if token is created', function () {
-    it('Should create a token', function () {
+describe('Valida token tests', function () {
+    it('Should verify token', function () {
         const parameterSecret = {
             Parameter: {
                 Value: 'minhaChave'
             }
         };
 
-        const token = tokenPackage.criaToken({
+        const tokenString = tokenPackage.criaToken({
             'email': 'pedrao@gmail.com'
         }, parameterSecret.Parameter.Value, {
-            expiresIn: '2 days',
             issuer: 'pedrao',
+            expiresIn: '2 days',
             notBefore: '120ms',
             audience: 'pedrao',
             subject: 'pedrao@gmail.com-pedrao'
         });
 
-        assert.notEqual('', token);
+
+        const tokenObject = tokenPackage.validaToken(tokenString,
+            parameterSecret.Parameter.Value,
+            {
+                issuer: 'pedrao',
+                audience: 'pedrao'
+            });
+
+        assert.notEqual('', tokenString);
+        assert.notEqual('', tokenObject.toString());
     });
 });
