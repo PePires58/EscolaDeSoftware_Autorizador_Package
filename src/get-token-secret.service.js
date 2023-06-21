@@ -1,9 +1,9 @@
 const AWS = require('aws-sdk');
 const ssm = new AWS.SSM({ apiVersion: '2014-11-06' });
 
-async function buscarSegredoToken(withDecryption) {
+async function buscarSegredoTokenFromParameterStore(caminhoParametro = '', withDecryption = false) {
     const params = {
-        Name: process.env.TokenSecretParameterName,
+        Name: caminhoParametro,
         WithDecryption: withDecryption
     };
 
@@ -14,4 +14,4 @@ async function buscarSegredoToken(withDecryption) {
         });
 }
 
-module.exports = buscarSegredoToken;
+module.exports = buscarSegredoTokenFromParameterStore;

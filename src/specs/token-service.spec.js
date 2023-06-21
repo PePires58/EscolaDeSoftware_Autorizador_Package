@@ -1,5 +1,5 @@
 const assert = require('assert').strict;
-const tokenService = require('../services/token.service');
+const tokenService = require('../token.service');
 
 describe('Validate credentials object service tests', function () {
     it('Should create a token', function () {
@@ -11,7 +11,13 @@ describe('Validate credentials object service tests', function () {
 
         const token = tokenService.criarToken({
             'email': 'pedrao@gmail.com'
-        }, parameterSecret);
+        }, parameterSecret.Parameter.Value, {
+            expiresIn: '2 days',
+            issuer: 'pedrao',
+            notBefore: '120ms',
+            audience: 'pedrao',
+            subject: 'pedrao@gmail.com-pedrao'
+        });
 
         assert.notEqual('', token);
     });
@@ -25,11 +31,21 @@ describe('Validate credentials object service tests', function () {
 
         const tokenString = tokenService.criarToken({
             'email': 'pedrao@gmail.com'
-        }, parameterSecret);
+        }, parameterSecret.Parameter.Value, {
+            issuer: 'pedrao',
+            expiresIn: '2 days',
+            notBefore: '120ms',
+            audience: 'pedrao',
+            subject: 'pedrao@gmail.com-pedrao'
+        });
 
 
         const tokenObject = tokenService.validarToken(tokenString,
-            parameterSecret);
+            parameterSecret.Parameter.Value,
+            {
+                issuer: 'pedrao',
+                audience: 'pedrao'
+            });
 
         assert.notEqual('', tokenString);
         assert.notEqual('', tokenObject.toString());
