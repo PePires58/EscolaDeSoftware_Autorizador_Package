@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "contém um pacote sobre o autorizador da escola de software em TS",
   "repository": "https://github.com/PePires58/EscolaDeSoftware_Autorizador_Package",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register './tests/**/*.test.ts'"
   },

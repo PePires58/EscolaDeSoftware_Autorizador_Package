@@ -3,7 +3,7 @@
     "target": "ES2022",
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "./",
+    "outDir": "./lib",
     "rootDir": "./",
     "preserveConstEnums": true,
     "esModuleInterop": true,
