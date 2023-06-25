@@ -9,7 +9,7 @@ jobs:
     with:
       working-directory: "src"
       execute-unit-tests: "true"
-      build-js-directory: "lib"
+      build-js-directory: ""
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       

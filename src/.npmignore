@@ -1,3 +1,6 @@
 tests
 /tests
 /tests/*
+*.ts
+services
+models
