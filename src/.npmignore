@@ -2,5 +2,5 @@ tests
 /tests
 /tests/*
 *.ts
-services
-models
+tsconfig.json
+package.json
