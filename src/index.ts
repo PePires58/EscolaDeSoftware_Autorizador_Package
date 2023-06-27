@@ -1,11 +1,6 @@
-import { CriaToken } from "./cria-token";
+import { ValidaToken } from './valida-token';
+import { RefreshToken } from './refresh-token';
 import { BuscaSegredoParameterStore } from "./busca-segredo-parameter-store";
-import { RefreshToken } from "./refresh-token";
-import { ValidaToken } from "./valida-token";
+import { CriaToken } from "./cria-token";
 
-module.exports = {
-    "CriaToken": CriaToken,
-    "BuscaSegredoParameterStore": BuscaSegredoParameterStore,
-    "RefreshToken": RefreshToken,
-    "ValidaToken": ValidaToken
-}
+export { ValidaToken, RefreshToken, BuscaSegredoParameterStore, CriaToken }
