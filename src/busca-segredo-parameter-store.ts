@@ -8,7 +8,7 @@ export class BuscaSegredoParameterStore {
         this.client = new SSMClient({ apiVersion: '2014-11-06' })
     }
 
-    BuscarSegredo(caminhoSegredo: string, descriptografar: boolean = false) {
+    async BuscarSegredo(caminhoSegredo: string, descriptografar: boolean = false) {
         const input: GetParameterCommandInput = {
             Name: caminhoSegredo,
             WithDecryption: descriptografar
@@ -17,7 +17,7 @@ export class BuscaSegredoParameterStore {
         const command: GetParameterCommand = new GetParameterCommand(input);
 
         let segredo = '';
-        this.client.send(command)
+        await this.client.send(command)
             .then((output) => {
                 if (output.Parameter?.Value)
                     segredo = output.Parameter.Value;
