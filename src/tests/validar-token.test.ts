@@ -1,4 +1,4 @@
-import { Usuario } from './../models/usuario';
+import { Usuario } from '././models/usuario';
 import { CriaToken } from '../services/cria-token';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
