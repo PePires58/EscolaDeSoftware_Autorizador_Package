@@ -1,8 +1,8 @@
-import { Usuario } from '././models/usuario';
-import { CriaToken } from '../services/cria-token';
+import { Usuario } from '../models/usuario';
+import { CriaToken } from '../cria-token';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-import { ValidaToken } from '../services/valida-token';
+import { ValidaToken } from '../valida-token';
 
 
 describe('Testes de validação do token', () => {
