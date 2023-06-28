@@ -1,6 +1,6 @@
 import jwt, { VerifyOptions } from "jsonwebtoken";
 
-declare class ValidaToken {
+export class ValidaToken {
     static ValidarToken(
         token: string,
         chaveToken: string,

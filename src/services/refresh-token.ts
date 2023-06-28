@@ -1,7 +1,7 @@
 import jwt, { SignOptions } from "jsonwebtoken";
 import { ValidaToken } from "./valida-token";
 import { CriaToken } from "./cria-token";
-import { Usuario } from "../models/usuario";
+import { Usuario } from "../types/usuadio";
 
 export class RefreshToken {
     static RefreshToken(

@@ -15,15 +15,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "types/cria-token.d.ts",
-    "types/busca-segredo-parameter-store.d.ts",
-    "services/busca-segredo-parameter-store.ts",
-    "services/cria-token.ts",
-    "services/refresh-token.ts",
-    "types/refresh-token.d.ts",
-    "services/valida-token.ts",
-    "types/valida-token.d.ts",
-    "index.d.ts"
+    "./**/*.ts",
+    "./**.ts"
   ],
   "exclude": [
     "node_modules",
