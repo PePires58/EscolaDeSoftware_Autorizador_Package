@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "rootDir": "./",
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./tests/*",
+    "lib"
+  ]
+}

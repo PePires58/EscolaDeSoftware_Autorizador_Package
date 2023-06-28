@@ -1,3 +1,5 @@
-specs
-/specs
-/specs/*
+tests
+/tests
+/tests/*
+tsconfig.json
+package.json
