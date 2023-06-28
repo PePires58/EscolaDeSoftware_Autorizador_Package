@@ -15,7 +15,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "./*",
     "types/cria-token.d.ts",
     "types/busca-segredo-parameter-store.d.ts",
     "services/busca-segredo-parameter-store.ts",
@@ -28,6 +27,7 @@
   ],
   "exclude": [
     "node_modules",
-    "./tests/*"
+    "./tests/*",
+    "lib"
   ]
 }
