@@ -23,7 +23,7 @@
     "types/refresh-token.d.ts",
     "services/valida-token.ts",
     "types/valida-token.d.ts",
-    "types/index.d.ts"
+    "index.d.ts"
   ],
   "exclude": [
     "node_modules",
