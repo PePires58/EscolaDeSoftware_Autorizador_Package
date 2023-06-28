@@ -1,5 +1,5 @@
 import jwt, { SignOptions } from 'jsonwebtoken';
-import { Usuario } from '../types/usuadio';
+import { Usuario } from '../models/usuario';
 
 export class CriaToken {
     static CriarToken(

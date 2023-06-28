@@ -1,6 +1,7 @@
 import { CriaToken } from '../services/cria-token';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
+import { Usuario } from '../models/usuario';
 
 describe('Testes de criação do token', () => {
     it('Deve criar um token', () => {

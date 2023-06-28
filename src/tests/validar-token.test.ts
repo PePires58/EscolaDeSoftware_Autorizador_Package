@@ -2,7 +2,7 @@ import { CriaToken } from '../services/cria-token';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { ValidaToken } from '../services/valida-token';
-import { Usuario } from '../types/usuadio';
+import { Usuario } from '../models/usuario';
 
 describe('Testes de validação do token', () => {
     it('Deve validar o token', () => {
