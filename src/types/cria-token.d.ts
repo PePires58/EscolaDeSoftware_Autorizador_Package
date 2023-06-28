@@ -1,5 +1,5 @@
 import { SignOptions } from "jsonwebtoken";
-import { Usuario } from "./models/usuario";
+import { Usuario } from "../models/usuario";
 
 declare class CriaToken {
     static CriarToken(

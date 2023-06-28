@@ -3,4 +3,3 @@ tests
 /tests/*
 tsconfig.json
 package.json
-lib

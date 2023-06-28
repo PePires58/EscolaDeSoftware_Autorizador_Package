@@ -1,5 +1,5 @@
 import { Usuario } from '../models/usuario';
-import { CriaToken } from '../cria-token';
+import { CriaToken } from '../services/cria-token';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 

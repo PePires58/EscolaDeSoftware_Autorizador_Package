@@ -4,6 +4,8 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./lib/types",
     "rootDir": "./",
     "preserveConstEnums": true,
     "esModuleInterop": true,
@@ -13,7 +15,16 @@
     "skipLibCheck": true
   },
   "include": [
-    "./*"
+    "./*",
+    "types/cria-token.d.ts",
+    "types/busca-segredo-parameter-store.d.ts",
+    "services/busca-segredo-parameter-store.ts",
+    "services/cria-token.ts",
+    "services/refresh-token.ts",
+    "types/refresh-token.d.ts",
+    "services/valida-token.ts",
+    "types/valida-token.d.ts",
+    "types/index.d.ts"
   ],
   "exclude": [
     "node_modules",
