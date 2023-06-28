@@ -5,7 +5,6 @@
     "sourceMap": true,
     "outDir": "./lib",
     "declaration": true,
-    "declarationDir": "./lib/types",
     "rootDir": "./",
     "preserveConstEnums": true,
     "esModuleInterop": true,
@@ -15,8 +14,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./**/*.ts",
-    "./**.ts"
+    "./*"
   ],
   "exclude": [
     "node_modules",

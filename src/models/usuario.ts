@@ -1,6 +1,6 @@
 export interface Usuario {
-    email: string;
     nome: string;
     sobrenome: string;
+    email: string;
     cpf: string;
 }
