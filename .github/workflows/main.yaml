@@ -4,11 +4,11 @@ on:
     branches: [main]
 
 jobs:
-  Deploy-package-npm-pipeline:
-    uses: PePires58/ReusableWorkflows/.github/workflows/001_nodejs_npm_pipeline.yaml@main
+   Deploy-package-npm-pipeline:
+    uses: PePires58/ReusableWorkflows/.github/workflows/005_typescript_npm_pipeline.yaml@main
     with:
       working-directory: "src"
       execute-unit-tests: "true"
+      build-js-directory: "lib"
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      
