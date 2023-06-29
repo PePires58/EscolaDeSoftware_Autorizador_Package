@@ -13,7 +13,7 @@ describe('Testes de criação do token', () => {
             cpf: '11111111111'
         };
 
-        const token = CriaToken.CriarToken(usuario,
+        const token = new CriaToken().CriarToken(usuario,
             chaveToken,
             {
                 expiresIn: '2 days',
@@ -35,7 +35,7 @@ describe('Testes de criação do token', () => {
             cpf: '11111111111'
         };
 
-        const token = CriaToken.CriarToken(usuario,
+        const token = new CriaToken().CriarToken(usuario,
             chaveToken,
             {
                 issuer: 'pedrao',
