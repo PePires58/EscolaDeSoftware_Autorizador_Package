@@ -13,7 +13,7 @@ export class RefreshToken {
 
         tokenValidado = this.DeletarPropriedadesToken(tokenValidado);
 
-        return CriaToken.CriarToken(tokenValidado as Usuario, chaveToken, config);
+        return new CriaToken().CriarToken(tokenValidado as Usuario, chaveToken, config);
     }
 
     private static DeletarPropriedadesToken(token: jwt.JwtPayload): object {
