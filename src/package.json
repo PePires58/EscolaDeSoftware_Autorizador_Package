@@ -1,11 +1,12 @@
 {
   "name": "escoladesoftware-autorizador-package-ts",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "contém um pacote sobre o autorizador da escola de software em TS",
   "repository": "https://github.com/PePires58/EscolaDeSoftware_Autorizador_Package",
   "types": "lib/index.d.ts",
   "main": "lib/index.js",
   "scripts": {
+    "compile": "tsc",
     "test": "mocha -r ts-node/register './tests/**/*.test.ts'"
   },
   "files": [
