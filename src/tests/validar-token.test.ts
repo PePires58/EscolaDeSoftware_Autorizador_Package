@@ -24,7 +24,7 @@ describe('Testes de validação do token', () => {
                 subject: 'pedrao@gmail.com-pedrao'
             });
 
-        const tokenValidado = ValidaToken.ValidarToken(
+        const tokenValidado = new ValidaToken().ValidarToken(
             token, chaveToken, {
             audience: 'pedrao',
             issuer: 'pedrao'

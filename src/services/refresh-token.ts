@@ -9,7 +9,7 @@ export class RefreshToken {
         chaveToken: string,
         config: SignOptions
     ): string {
-        let tokenValidado = ValidaToken.ValidarToken(token, chaveToken, config);
+        let tokenValidado = new ValidaToken().ValidarToken(token, chaveToken, config);
 
         tokenValidado = this.DeletarPropriedadesToken(tokenValidado);
 
