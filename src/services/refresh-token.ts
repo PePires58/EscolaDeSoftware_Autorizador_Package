@@ -4,7 +4,7 @@ import { CriaToken } from "./cria-token";
 import { Usuario } from "../models/usuario";
 
 export class RefreshToken {
-    static RefreshToken(
+    RefreshToken(
         token: string,
         chaveToken: string,
         config: SignOptions
@@ -16,7 +16,7 @@ export class RefreshToken {
         return new CriaToken().CriarToken(tokenValidado as Usuario, chaveToken, config);
     }
 
-    private static DeletarPropriedadesToken(token: jwt.JwtPayload): object {
+    private DeletarPropriedadesToken(token: jwt.JwtPayload): object {
         delete token.iat;
         delete token.exp;
         delete token.nbf;
